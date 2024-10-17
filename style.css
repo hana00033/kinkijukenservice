@@ -52,7 +52,7 @@ font-style: normal;
     display: flex;
     justify-content: space-between;   
     height: 120px; 
-    padding: 24px 5%;
+    padding: 24px 3%;
 }
 
 .title-container{
@@ -156,6 +156,7 @@ filter: opacity(60%);
     text-align: center;
     font-size: 12px;
     line-height: 14px;
+    margin: 0 8px;
 }
 
 .instagram img{
@@ -353,5 +354,27 @@ td{
 #map img{
     width: 600px;
     padding-top: 32px;
+}
+
+.links-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+/* footer */
+
+footer{
+    height: 68px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+small{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 
