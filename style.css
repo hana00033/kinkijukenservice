@@ -6,6 +6,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 p,img{
     margin: 0;
@@ -81,8 +82,6 @@ font-style: normal;
 }
 
 .contact-container{
-    
-
     width: 260px;
 
     margin:5px;
@@ -98,11 +97,12 @@ font-style: normal;
   
     font-size: 16px;
     font-weight: 700;
-    line-height: 20px;
     letter-spacing: 0.03em;
     text-align: left;
 
-    padding:5px;
+    display: table;
+
+    padding: 5px;
 }
 
 .contact-container img{
@@ -111,7 +111,7 @@ font-style: normal;
     margin: 0 8px;
 }
 
-.contact-container a{
+.contact-container p{
     flex: 1; 
     color: #fff;
 }
@@ -121,7 +121,11 @@ transition: .3s; /* 変化時間 0.3秒 */
 filter: opacity(60%);
 }
 
-.tel{
+.tell-wrapper{
+    display: flex;
+}
+
+#tel{
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.03em;
@@ -129,7 +133,7 @@ filter: opacity(60%);
 
 }
 
-.phonenum{
+#phonenum{
     font-size: 28px;
     font-weight: 700;
     line-height: 28px;
@@ -164,6 +168,7 @@ filter: opacity(60%);
     margin: 0 24px 24px 24px;
     
 }
+
 
 /*first-view*/
 .fv-wrapper{
@@ -263,12 +268,10 @@ h3{
 
 
 .instagram-container{
-    width: 377px;
-    height: 76px;
+    width: 25%;
     font-size: 24px;
     line-height: 45px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
     background-color: #14389B;
     border-radius: 22px;
     border: none;
@@ -352,7 +355,7 @@ td{
 }
 
 #map img{
-    width: 600px;
+    width: 80%;
     padding-top: 32px;
 }
 
@@ -376,5 +379,36 @@ small{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
+}
+
+@media screen and (max-width:481px) {
+
+
+    h1{
+        font-size: 20px;
+    }
+
+    .title-wrapper{
+        height: 100px;
+    }
+
+    .title-container img{
+        width:20px;
+    }
+    
+    .head div,p{
+        display: none;
+    }
+
+    .contact-container{
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+    }
+
+    .contact-container img{
+        width: 16px;
+    }
+    
 }
 
