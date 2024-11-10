@@ -15,9 +15,11 @@
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <header class="title-wrapper">
         <div class="title-container">
-            <div>
+            <div class="logo">
                 <img src="images/logo.png" alt="会社ロゴ">
             </div>
             <div class="title">
@@ -26,19 +28,19 @@
             </div>
         </div>
         <div class="header-right">
-            <div class="instagram">
+            <div class="instagram head-button">
                 <img src="images/Instagram_Glyph_Gradient.png" alt="">
                 <p class="roboto-light">施工事例は<br>こちら</p>
             </div>
             <div class="contact">
                 <div class="contact-container" id="green">
-                    <a href="hoge" class="button head">
+                    <a href="hoge" class="button head-button">
                         <img src="images/form.png" alt="お問い合わせフォーム" />
                         <p>問い合わせフォームでの<br>お問い合わせはこちら</p>
                     </a>
                 </div>
                 <div class="contact-container" id="orange">
-                    <a href="tel:0120-650-575" class="button head">
+                    <a href="tel:0120-650-575" class="button head-button">
                         <img src="images/phone.png" alt="電話番号" />
                         <div class="tel-wrapper">
                             <p id="tel">お電話でのお問い合わせ</p>
@@ -47,6 +49,27 @@
                     </a>
                 </div>   
             </div>
+        </div>
+        <div id="navArea">
+
+        <nav>
+            <div class="inner">
+            <ul>
+                <li><a href="#">Text</a></li>
+                <li><a href="#">Text</a></li>
+                <li><a href="#">Text</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+
         </div>
         
     </header>
@@ -135,7 +158,7 @@
                     <h3 class="roboto-medium">30年以上の豊富な施工実績
                     </h3>
                     <p class="roboto-light">
-                        当社は30年以上、外壁塗装工事、屋根改修工事、リフォーム、その他住宅メンテナンスに真摯に取り組んできました。 見た目の美しさはもちろん、機能性の向上にもこだわり、高品質な仕上がりを提供します。 長年の経験と実績を活かしてお客様に信頼される確かな技術をお届けします。 安心してお任せいただけるパートナーとして、末長くご満足いただける施工を心がけています。
+                        当社は30年以上、外壁塗装工事、屋根改修工事、リフォーム、その他住宅メンテナンスに真摯に取り組んできました。見た目の美しさはもちろん、機能性の向上にもこだわり、高品質な仕上がりを提供します。長年の経験と実績を活かしてお客様に信頼される確かな技術をお届けします。安心してお任せいただけるパートナーとして、末長くご満足いただける施工を心がけています。
                     </p>
                 </div>
                 <img src="images/content2-2.png" alt="">
@@ -209,6 +232,13 @@
     </div>
     <footer>
         <small class="roboto-light">copyright @ キンキ住建サービス</small>
+        <div id="sp-fixed-menu" class="for-sp">
+            <ul>
+                <li><a href="#"><img src="images/Instagram_Glyph_White.png" alt=""></a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">電話</a></li>
+            </ul>
+          </div>
     </footer>
 </body>
 </html>
