@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="title-wrapper">
+    <header class="title-wrapper" id="top">
         <div class="title-container">
             <div class="logo">
                 <img src="images/logo.png" alt="会社ロゴ">
@@ -49,15 +49,15 @@
             </div>
         </div>
     </header>
-    <!-- スマホ用メニュー -->
-    <section class="spmenucontainer">
+
+     <!-- スマホ用メニュー -->
+     <section class="spmenucontainer">
         <div class="spmenu">
         <ul class="spmenu__nav">
-            <li class="spmenu__navlist"><a href="/">Top</a></li>
-            <li class="spmenu__navlist"><a href="/">Menu 1</a></li>
-            <li class="spmenu__navlist"><a href="/">Menu 2</a></li>
-            <li class="spmenu__navlist"><a href="/">Menu 3</a></li>
-            <li class="spmenu__navlist"><a href="/">Menu 4</a></li>
+            <li class="spmenu__navlist"><a href="#top">Top</a></li>
+            <li class="spmenu__navlist"><a href="#section1">事業内容</a></li>
+            <li class="spmenu__navlist"><a href="#section2">当社の強み</a></li>
+            <li class="spmenu__navlist"><a href="#section3">会社概要</a></li>
         </ul>
         </div>
     </section>  
@@ -66,6 +66,7 @@
         <span class="burgerbtn__border bordertop"></span>
         <span class="burgerbtn__border bordermiddle"></span>
         <span class="burgerbtn__border borderbottom"></span>
+        <span class="burgerbtn__text">menu</span>
     </div>
 
     <div class="fv-wrapper">
@@ -76,7 +77,7 @@
     </div>
     <div class="contents contents1-wrapper">
         <div>
-            <h2 class="roboto-medium">事業内容</h2>
+            <h2 class="roboto-medium" id="section1">事業内容</h2>
             <hr width="70px" align="center" color="#14389B">
             <hr width="70px" align="center" color="#9A9A9A">
         </div>
@@ -131,7 +132,7 @@
     </div>
     <div class="contents contents2-wrapper">
         <div>
-            <h2 class="roboto-medium">当社の強み</h2>
+            <h2 class="roboto-medium" id="section2">当社の強み</h2>
             <hr width="70px" align="center" color="#14389B">
             <hr width="70px" align="center" color="#9A9A9A">
         </div>
@@ -174,7 +175,7 @@
     </div>
     <div class="contents contents1-wrapper">
         <div>
-            <h2 class="roboto-medium">会社概要</h2>
+            <h2 class="roboto-medium" id="section3">会社概要</h2>
             <hr width="70px" align="center" color="#14389B">
             <hr width="70px" align="center" color="#9A9A9A">
         </div>

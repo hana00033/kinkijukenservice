@@ -476,7 +476,7 @@ small{
 
       .spmenucontainer {
         height: 100vh;
-        background-color: #ccc;
+        background-color: #14389B;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -486,7 +486,8 @@ small{
         right: 0;
         transform: translate(100vw, 0);
         transition: .6s ease-in-out;
-        opacity: .9;
+        z-index: 100;
+        /* opacity: .9; */
       }
       ul {
         padding: 0;
@@ -499,7 +500,7 @@ small{
         text-align: center;
       }
       .spmenu__navlist  a {
-        color: #808080;
+        color: #fff;
         font-size: 18px;
         font-weight: bold;
         text-decoration: none;
@@ -509,35 +510,46 @@ small{
       .burgerbtn {
       position: relative;
       display: none;
+      z-index: 101;
       }
 
         .burgerbtn {
           position: fixed;
           display: block;
-          width: 50px;
-          height: 50px;
-          top: 8px;
-          right: 12px;
+          width: 60px;
+          height: 78px;
+          top: 0px;
+          right: 0px;
+          background-color: #14389B;
         }
         .burgerbtn__border {
           position: absolute;
-          width: 32px;
-          height: 2px;
-          background-color: #808080;
+          width: 36px;
+          height: 4px;
+          border-radius: 2px;
+          background-color:#ffffffff;
           transition: .6s;
         }
         .burgerbtn__border:nth-child(1) {
-          top: 13px;
-          left: 11px;
+          top: 17px;
+          left: 12px;
         }
         .burgerbtn__border:nth-child(2) {
-          top: 25px;
-          left: 11px;
+          top: 29px;
+          left: 12px;
         }
         .burgerbtn__border:nth-child(3) {
-          top: 37px;
-          left: 11px;
+          top: 41px;
+          left: 12px;
         }
+        .burgerbtn__text {
+            position: absolute;
+            transition: .6s;
+            top: 51px;
+            left: 15px;
+            color: #fff;
+            font-size: 12px;
+          }
         /* メニュー開閉 */
         .spmenuvisible {
         transform: translate(0, 0);
@@ -567,11 +579,8 @@ small{
     
 
 @media screen and (min-width: 768px) {
-    .for-sp{
+    .spmenucontainer,.burgerbtn{
        display:none;
-     }
-     #navArea{
-        display: none;
      }
 
  }
