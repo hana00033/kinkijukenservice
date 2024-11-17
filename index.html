@@ -15,8 +15,6 @@
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="main.js"></script>
     <header class="title-wrapper">
         <div class="title-container">
             <div class="logo">
@@ -50,29 +48,26 @@
                 </div>   
             </div>
         </div>
-        <div id="navArea">
-
-        <nav>
-            <div class="inner">
-            <ul>
-                <li><a href="#">Text</a></li>
-                <li><a href="#">Text</a></li>
-                <li><a href="#">Text</a></li>
-            </ul>
-            </div>
-        </nav>
-
-        <div class="toggle_btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div id="mask"></div>
-
-        </div>
-        
     </header>
+    <!-- スマホ用メニュー -->
+    <section class="spmenucontainer">
+        <div class="spmenu">
+        <ul class="spmenu__nav">
+            <li class="spmenu__navlist"><a href="/">Top</a></li>
+            <li class="spmenu__navlist"><a href="/">Menu 1</a></li>
+            <li class="spmenu__navlist"><a href="/">Menu 2</a></li>
+            <li class="spmenu__navlist"><a href="/">Menu 3</a></li>
+            <li class="spmenu__navlist"><a href="/">Menu 4</a></li>
+        </ul>
+        </div>
+    </section>  
+    <!-- バーガーボタン -->
+    <div class="burgerbtn">
+        <span class="burgerbtn__border bordertop"></span>
+        <span class="burgerbtn__border bordermiddle"></span>
+        <span class="burgerbtn__border borderbottom"></span>
+    </div>
+
     <div class="fv-wrapper">
         <img src="images/first-view.png" alt="">
         <p class="roboto-bold">私たちキンキ住建は、<br>
@@ -82,8 +77,8 @@
     <div class="contents contents1-wrapper">
         <div>
             <h2 class="roboto-medium">事業内容</h2>
-            <hr width="126px" align="center" color="#14389B">
-            <hr width="126px" align="center" color="#9A9A9A">
+            <hr width="70px" align="center" color="#14389B">
+            <hr width="70px" align="center" color="#9A9A9A">
         </div>
         <div class="contents-container contents1-container">
             <div class="content1">
@@ -137,8 +132,8 @@
     <div class="contents contents2-wrapper">
         <div>
             <h2 class="roboto-medium">当社の強み</h2>
-            <hr width="126px" align="center" color="#14389B">
-            <hr width="126px" align="center" color="#9A9A9A">
+            <hr width="70px" align="center" color="#14389B">
+            <hr width="70px" align="center" color="#9A9A9A">
         </div>
         <div class="contents-container">
             <div class="content2">
@@ -161,7 +156,7 @@
                         当社は30年以上、外壁塗装工事、屋根改修工事、リフォーム、その他住宅メンテナンスに真摯に取り組んできました。見た目の美しさはもちろん、機能性の向上にもこだわり、高品質な仕上がりを提供します。長年の経験と実績を活かしてお客様に信頼される確かな技術をお届けします。安心してお任せいただけるパートナーとして、末長くご満足いただける施工を心がけています。
                     </p>
                 </div>
-                <img src="images/content2-2.png" alt="">
+                <img id="middle-img" src="images/content2-2.png" alt="">
             </div>
             <div class="content2">
                 <img src="images/content2.png" alt="">
@@ -180,8 +175,8 @@
     <div class="contents contents1-wrapper">
         <div>
             <h2 class="roboto-medium">会社概要</h2>
-            <hr width="126px" align="center" color="#14389B">
-            <hr width="126px" align="center" color="#9A9A9A">
+            <hr width="70px" align="center" color="#14389B">
+            <hr width="70px" align="center" color="#9A9A9A">
         </div>
         <div class="contents-container">
             <table>
@@ -242,3 +237,5 @@
     </footer>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="main.js"></script>

@@ -1,41 +1,40 @@
+console.log("test1")
 
-// (function($) {
-//   var $nav   = $('#navArea');
-//   var $btn = $('.toggle_btn');
-//   var $mask  = $('#mask');
-//   var open   = 'open'; // class
-//   console.log("test1");
-//   // menu open close
-//   $btn.on( 'click', function() {
-//     if ( ! $nav.hasClass( open ) ) {
-//       $nav.addClass( open );
-//       console.log("test2");
-//     } else {
-//       $nav.removeClass( open );
-//     }
-//   });
-//   // mask close
-//   $mask.on('click', function() {
-//     $nav.removeClass( open );
-//   });
-// } )(jQuery);
+const body = document.body;  // body 要素
+const modal = document.querySelector('.modal__wrapper');  // モーダル要素
+const overlay = document.querySelector('.overlay');  // モーダルの背景の要素
+const button = document.querySelector('.button');   // モーダルを表示させるボタン
 
-(function($) {
-  var $nav   = $('#navArea');
-  var $btn = $('.toggle_btn');
-  var $mask  = $('#mask');
-  var open   = '.open'; // class
-  // menu open close
-  $(document).on( 'click', $btn,function() {
-    if ( ! $nav.hasClass( open ) ) {
-      $nav.addClass( open );
-      console.log("test2");
-    } else {
-      $nav.removeClass( open );
-    }
-  });
-  // mask close
-  $mask.on('click', function() {
-    $nav.removeClass( open );
-  });
-} )(jQuery);
+// ボタンをクリックした時にモーダルを表示する
+button.addEventListener('click', () => {
+  body.style.top = `-${window.scrollY}px`;  // スクロール量を取得して body の高さとする
+  body.classList.add('backgroundfix');  // body 要素を固定してスクロールできないようにする
+  modal.classList.add('visible'); // モーダルを表示
+}, false);
+
+// モーダルの背景をクリックした時にモーダルを閉じる
+overlay.addEventListener('click', () => {
+  modal.classList.remove('visible');  // モーダルを非表示に
+  body.classList.remove('backgroundfix');  // body の固定を解除
+  const top = body.style.top;  // body の高さを取得
+  const topHeight = top.replace('px', '').replace('-', '');  // top から - と px を除去
+  window.scrollTo(0, topHeight); // topHeight の高さまで移動
+}, false);
+
+
+
+
+// バーガーボタン
+const burgerBtn = document.querySelector('.burgerbtn');
+const burgerBtnTop = document.querySelector('.bordertop');
+const burgerBtnMiddle = document.querySelector('.bordermiddle');
+const burgerBtnBottom = document.querySelector('.borderbottom');
+const spMenu = document.querySelector('.spmenucontainer');
+
+burgerBtn.addEventListener('click', () => {
+  // メニュー開閉
+  spMenu.classList.toggle('spmenuvisible');
+  burgerBtnTop.classList.toggle('bordertop_open');
+  burgerBtnMiddle.classList.toggle('bordermiddle_open');
+  burgerBtnBottom.classList.toggle('borderbottom_open');
+});
