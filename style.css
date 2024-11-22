@@ -255,7 +255,7 @@ hr{
     position: absolute;/*重ねたい子要素にabsolute*/
     bottom:10px;
     right: 10px;
-    color: #c4c4c4;
+    color: #747474;
     font-size: 8px;
     margin: 0!important;/*文字がずれている場合や*/
     padding: 0!important;/*文字が折り返される場合*/
