@@ -177,7 +177,7 @@ filter: opacity(60%);
 /*first-view*/
 .fv-wrapper{
     width: 100%;
-    height: 582px ;
+    height: 95%;
     position: relative;
 }
 
@@ -187,26 +187,22 @@ filter: opacity(60%);
     object-fit:cover;
     object-position: top;
     filter: opacity(60%);
-    cursor: pointer;
 }
 
-.fv-wrapper p{
-    width: 100%;
-    color: #535252;
+.fv-text{
+    width: max-content;
+    color: #fff;
     
     position: absolute;
-    top:50%;
-    left: 50%;
+    top:300px;
+    left: 600px;
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    text-align: center;
 
     font-size: 32px;
     line-height: 45px;
     letter-spacing: 0.03em;
-    text-align: center;
-
 }
 
 /* contents1 */
@@ -247,6 +243,23 @@ hr{
 
 .content1 img{
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.content-image-wrapper{
+    position: relative;
+}
+
+.copyright{
+    position: absolute;/*重ねたい子要素にabsolute*/
+    bottom:10px;
+    right: 10px;
+    color: #c4c4c4;
+    font-size: 8px;
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+    font-weight: lighter;
 }
 
 h3{
@@ -300,6 +313,9 @@ h3{
 
 .content2 img{
     width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
 }
 
 .content2-text{
@@ -424,7 +440,7 @@ small{
     align-items: center;
  }
 
-@media screen and (max-width:481px) {
+@media screen and (max-width:768px) {
 
 
     h1{
@@ -457,11 +473,21 @@ small{
         margin-bottom: 100px;
     }
 
-    .fv-wrapper p{
+    .fv-wrapper img{
+        width: 100%;
+        height: 490px;
+        object-fit:cover;
+        object-position: -100px 0px;
+        filter: opacity(60%);
+    }
+
+    .fv-text{
         font-size: 16px;
         line-height: 150%;
         margin: 3%;
         width:80%;
+        top:350px;
+        left: 180px;
     }
   
       #middle-img{
@@ -471,6 +497,12 @@ small{
       .content2-text{
         order: 2;
       }
+
+      .content2 img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 
       /* スマホ用メニュー */
 
@@ -579,7 +611,7 @@ small{
     
 
 @media screen and (min-width: 768px) {
-    .spmenucontainer,.burgerbtn{
+    .spmenucontainer,.burgerbtn,#sp-fixed-menu{
        display:none;
      }
 
