@@ -283,6 +283,7 @@ filter: opacity(60%);
     font-size: 3.2rem;
     margin-bottom: 2rem;
     animation: slideInFromLeft 0.8s ease-out 0.5s both;
+    white-space: nowrap;
 }
 
 .hero-content p {
@@ -911,9 +912,25 @@ small{
         line-height: 150%;
         margin: 3%;
         width:80%;
-        top:350px;
+        /* top:350px; */
+        top:50%;
         left: 45%;
         text-align: left;
+    }
+
+    #scroll-down {
+        display: block;
+        position: relative;
+        padding-top: 19px;
+        text-align: center;
+    }
+
+    #scroll-down::before {
+        height: 30px;
+    }
+
+    .arrow-down{
+        height: 20px;
     }
   
       #middle-img{
