@@ -15,32 +15,32 @@
 </head>
 
 <body>
-    <header class="title-wrapper" id="top">
-        <div class="title-container">
-            <div class="logo">
+    <header class="title-wrapper" id="main-header">
+        <div class="title-container header-content">
+            <div class="logo logo-container">
                 <img src="images/logo-kinki.svg" alt="会社ロゴ">
             </div>
-            <div class="title">
+            <div class="title company-info">
                 <p class="roboto-medium">外壁塗装、屋根改修、リフォーム、その他住宅メンテナンス</p>
                 <h1>キンキ住建サービス</h1>
             </div>
         </div>
-        <div class="header-right">
-            <div class="instagram head-button">
-                <img src="images/Instagram_Glyph_Gradient.png" alt="">
-                <p class="roboto-light">施工事例は<br>こちら</p>
+        <div class="header-right contact-buttons">
+            <div class="instagram head-button portfolio-link">
+                <img src="images/Instagram_Glyph_Gradient.png" alt="ig_icon">
+                <p class="roboto-light">施工事例はこちら</p>
             </div>
             <div class="contact">
                 <div class="contact-container" id="green">
-                    <a href="hoge" class="button head-button">
+                    <a href="hoge" class="button head-button contact-form-button">
                         <img src="images/form.png" alt="お問い合わせフォーム" />
-                        <p>問い合わせフォームでの<br>お問い合わせはこちら</p>
+                        <p>問い合わせフォーム</p>
                     </a>
                 </div>
                 <div class="contact-container" id="orange">
-                    <a href="tel:0120-650-575" class="button head-button">
+                    <a href="tel:0120-650-575" class="button head-button phone-button">
                         <img src="images/phone.png" alt="電話番号" />
-                        <div class="tel-wrapper">
+                        <div class="tel-wrapper phone-number">
                             <p id="tel">お電話でのお問い合わせ</p>
                             <p id="phonenum">0120-650-575</p>
                         </div>
@@ -68,14 +68,36 @@
         <span class="burgerbtn__border borderbottom"></span>
         <span class="burgerbtn__text">menu</span>
     </div>
-    <div class="fv-wrapper content-image-wrapper">
-        <img src="images/fv.jpg" alt="">
-        <p class="roboto-bold fv-text">私たちキンキ住建は、<br>
-            三重県全域で地域密着型の塗装工事と屋根改修工事を提供しています。<br>
-            信頼と品質を重視し、お客様の期待に応えるサービスを心がけています。</p>
+    <!-- ファーストビュー -->
+    <div class="fv-wrapper content-image-wrapper" id="hero-section">
+        <!-- <div class="fv-img-wrapper ">
+            <img src="images/fv.jpg" alt="">
+        </div> -->
+        <div class="roboto-bold fv-text hero-content">
+                <h1>私たちキンキ住建は、</h1>
+                <p>三重県全域で地域密着型の塗装工事と屋根改修工事を提供しています。<br>
+                    信頼と品質を重視し、お客様の期待に応えるサービスを心がけています。
+                </p>
+        </div>
         <p class="copyright">Photo by note thanun on Unsplash</p>
+        <!-- <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div> -->
+        <div id="wrapper" class="scroll-indicator">
+            <div id="wrapper-inner">
+                <div id="scroll-down" class="scroll-indicator">
+                    <span class="arrow-down">
+                        <!-- css generated icon -->
+                    </span>
+                    <span id="scroll-title">
+                        Scroll down
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contents contents1-wrapper">
+    <!-- コンテンツ -->
+    <div class="contents contents1-wrapper fadein fadein-bottom">
         <div>
             <h2 class="roboto-medium" id="section1">事業内容</h2>
             <hr width="70px" align="center" color="#14389B">
@@ -86,44 +108,50 @@
                 <div class="content-image-wrapper">
                     <img src="images/★事業内容_01.外壁塗装工事_明るさ調節.jpg" alt="">
                 </div>
-                <h3 class="roboto-medium">01. 外壁塗装工事</h3>
-                <p class="roboto-light">塗装工事とは文字通り、
-                    ”建物の外壁や屋根を塗り替える工事”をいいます。<br>
-                    外観の美しさを維持することが
-                    最大の目的ではありますが、
-                    実は建物を保護し、耐久性を伸ばすと
-                    いう大きな役割もあります。<br>
-                    日常の雨や紫外線などに晒されて劣化
-                    してしまうものですので、一般的には
-                    新築から10年を過ぎたころに塗装を
-                    行うのがよいとされています。<br>
-                    当社では、お客様の建物の状態を職人が確認した上で、工事の内容を相談させていただいております。
-                </p>
+                <div class="content1-text-wrapper">
+                    <h3 class="roboto-medium">01. 外壁塗装工事</h3>
+                    <p class="roboto-light">塗装工事とは文字通り、
+                        ”建物の外壁や屋根を塗り替える工事”をいいます。<br>
+                        外観の美しさを維持することが
+                        最大の目的ではありますが、
+                        実は建物を保護し、耐久性を伸ばすと
+                        いう大きな役割もあります。<br>
+                        日常の雨や紫外線などに晒されて劣化
+                        してしまうものですので、一般的には
+                        新築から10年を過ぎたころに塗装を
+                        行うのがよいとされています。<br>
+                        当社では、お客様の建物の状態を職人が確認した上で、工事の内容を相談させていただいております。
+                    </p>
+                </div>
             </div>
             <div class="content1">
                 <img src="images/★事業内容_02.屋根改修工事_明るさ調節.jpg" alt="">
-                <h3 class="roboto-medium">02. 屋根改修工事</h3>
-                <p class="roboto-light">
-                    屋根の改修工事には、様々な手法があります。<br>
-                    屋根の劣化状態築年数などを考慮し最適な工事を行うことが重要です。<br>
-                    当社では、屋根改修工事に用いられる葺き替え工事・葺き直し工事・重ね葺き工事・塗装工事など、
-                    あらゆる手法に対応しておりますので、お客様の建物状況にあわせた最適な工事をご提供することができます。<br>
-                    屋根についても、外壁と同様に10年に一度はメンテナンスを行うことが一般的とされています。
-                </p>
+                <div class="content1-text-wrapper">
+                    <h3 class="roboto-medium">02. 屋根改修工事</h3>
+                    <p class="roboto-light">
+                        屋根の改修工事には、様々な手法があります。<br>
+                        屋根の劣化状態築年数などを考慮し最適な工事を行うことが重要です。<br>
+                        当社では、屋根改修工事に用いられる葺き替え工事・葺き直し工事・重ね葺き工事・塗装工事など、
+                        あらゆる手法に対応しておりますので、お客様の建物状況にあわせた最適な工事をご提供することができます。<br>
+                        屋根についても、外壁と同様に10年に一度はメンテナンスを行うことが一般的とされています。
+                    </p>
+                </div>
             </div>
             <div class="content1">
                 <div class="content-image-wrapper">
                     <img src="images/★事業内容_03.リフォーム.jpg" alt="">
                     <p class="copyright">Photo by Francesca Tosolini on Unsplash</p>
                 </div>
-                <h3 class="roboto-medium">03. リフォーム</h3>
-                <p class="roboto-light">
-                    リフォームとは、老朽化した建築物を新築に近い状態に戻すことをいいます。<br>
-                    似た言葉に”リノベーション”というものがありますが、これは既存の建物に工事を加えることで”作り変える”ことを指しますので、行う工事も異なります。<br>
-                    当社が専門とするリフォームは、工事の範囲が部分的となりますので、リノベーションと比較して安価で実現可能です。
-                    また、短期間で完了することができます（通常約1か月）ので、お客様のご負担を最小限に済ませられます。
-                    元の建物の生活動線や雰囲気を維持したい方に特におすすめしております。
-                </p>
+                <div class="content1-text-wrapper">
+                    <h3 class="roboto-medium">03. リフォーム</h3>
+                    <p class="roboto-light">
+                        リフォームとは、老朽化した建築物を新築に近い状態に戻すことをいいます。<br>
+                        似た言葉に”リノベーション”というものがありますが、これは既存の建物に工事を加えることで”作り変える”ことを指しますので、行う工事も異なります。<br>
+                        当社が専門とするリフォームは、工事の範囲が部分的となりますので、リノベーションと比較して安価で実現可能です。
+                        また、短期間で完了することができます（通常約1か月）ので、お客様のご負担を最小限に済ませられます。
+                        元の建物の生活動線や雰囲気を維持したい方に特におすすめしております。
+                    </p>
+                </div>
             </div>
         </div>
         <div class="instagram-container">
@@ -135,7 +163,7 @@
         <p id="content1-text" class="roboto-medium">上記以外の住宅メンテナンス工事もご対応させていただいておりますので、<br>
             まずはお気軽にご相談ください。</p>
     </div>
-    <div class="contents contents2-wrapper">
+    <div class="contents contents2-wrapper fadein fadein-bottom">
         <div>
             <h2 class="roboto-medium" id="section2">当社の強み</h2>
             <hr width="70px" align="center" color="#14389B">
@@ -183,7 +211,7 @@
             </div>
         </div>
     </div>
-    <div class="contents contents1-wrapper">
+    <div class="contents contents1-wrapper fadein fadein-bottom"">
         <div>
             <h2 class="roboto-medium" id="section3">会社概要</h2>
             <hr width="70px" align="center" color="#14389B">
@@ -197,11 +225,26 @@
                 </tr>
                 <tr>
                     <th class="roboto-light">所在地</th>
-                    <td class="roboto-light" id="map">〒514-0304 
-                        三重県津市雲出本郷町１７９５−２
-                        <div class="image-wrapper">
+                    <td class="roboto-light" id="map">〒514-0304<br>
+                        三重県津市雲出本郷町1795-2
+                        <div class="image-wrapper modal__image modal__trigger">
                             <img src="images/map@300x.png" alt="">
                         </div>
+                        <!-- モーダル本体 -->
+                        <div class="modal__wrapper">
+                            <div class="modal__layer"></div>
+                            <div class="modal__container">
+                    
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal__close"></div>
+                            <!-- / モーダルを閉じるボタン -->
+                    
+                            <!-- モーダル内のコンテンツ -->
+                            <div class="modal__content"></div>
+                            <!-- / モーダル内のコンテンツ -->
+                            </div>
+                        </div>
+                        <!-- / モーダル本体 -->
                     </td>
                 </tr>
                 <tr>
@@ -210,19 +253,19 @@
                 </tr>
                 <tr>
                     <th class="roboto-light">建設業許可番号</th>
-                    <td class="roboto-light">***</td>
+                    <td class="roboto-light">三重県知事 許可（般-6）第 24307号</td>
                 </tr>
             </table>
         </div>
         <div class="links-wrapper">
-            <div class="instagram">
-                <img src="images/Instagram_Glyph_Gradient.png" alt="">
-                <p class="roboto-light">施工事例は<br>こちら</p>
+            <div class="instagram head-button">
+                <img src="images/Instagram_Glyph_Gradient.png" alt="ig_icon">
+                <p class="roboto-light">施工事例はこちら</p>
             </div>
             <div class="contact-container" id="green">
                 <a href="hoge" class="button">
                     <img src="images/form.png" alt="お問い合わせフォーム" />
-                    <p class="button">問い合わせフォームでの<br>お問い合わせはこちら</p>
+                    <p class="button">お問い合わせフォーム</p>
                 </a>
             </div>
             <div class="contact-container" id="orange">
@@ -250,3 +293,4 @@
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
