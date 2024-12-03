@@ -869,6 +869,12 @@ small{
 
     .title-wrapper{
         height: 78px;
+        margin-right: 60px;
+    }
+
+    .title p{
+        font-size: 10px;
+        margin-bottom: 4px;
     }
 
     .logo{
