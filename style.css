@@ -294,7 +294,7 @@ filter: opacity(60%);
 
 .scroll-indicator {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -912,8 +912,7 @@ small{
         line-height: 150%;
         margin: 3%;
         width:80%;
-        /* top:350px; */
-        top:50%;
+        top:40%;
         left: 45%;
         text-align: left;
     }

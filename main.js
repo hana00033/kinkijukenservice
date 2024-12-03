@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollIndicator = document.querySelector('.scroll-indicator');
 
   window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 300) {
           scrollIndicator.style.opacity = '0';
       } else {
-          scrollIndicator.style.opacity = '1';
+          scrollIndicator.style.opacity = '1';        
       }
   });
 });
