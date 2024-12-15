@@ -77,3 +77,18 @@ $(window).scroll(function (){
 			}
 	});
 });
+
+// 画像スライドインアニメーション
+window.addEventListener("scroll", function () {
+  const images = document.querySelectorAll(".slide-in-image");
+  const triggerHeight = window.innerHeight * 0.8; // ウィンドウの80%の高さで発火
+
+  images.forEach((image) => {
+    const imageTop = image.getBoundingClientRect().top;
+
+    if (imageTop < triggerHeight) {
+      image.style.opacity = 1;
+      image.style.transform = "translateX(0)"; // 元の位置に戻す
+    }
+  });
+});

@@ -715,6 +715,20 @@ h3{
     margin: auto;
 }
 
+/* contents2 animation */
+
+.slide-in-image-left {
+    opacity: 0;
+    transform: translateX(-100px); /* 左から */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-image-right {
+    opacity: 0;
+    transform: translateX(100%); /* 右からスライドさせる */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
 /* contents3 */
 
 table{
