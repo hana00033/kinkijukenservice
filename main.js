@@ -72,16 +72,16 @@ $(window).scroll(function (){
 		scroll = $(window).scrollTop(),
 		windowHeight = $(window).height();
 
-			if (scroll > elemPos - windowHeight + 150){
+			if (scroll > elemPos - windowHeight + 50){
 				$(this).addClass('scrollin');
 			}
 	});
 });
 
-// 画像スライドインアニメーション
+// // 画像スライドインアニメーション
 window.addEventListener("scroll", function () {
   const images = document.querySelectorAll(".slide-in-image");
-  const triggerHeight = window.innerHeight * 0.8; // ウィンドウの80%の高さで発火
+  const triggerHeight = window.innerHeight * 0.7; // ウィンドウの80%の高さで発火
 
   images.forEach((image) => {
     const imageTop = image.getBoundingClientRect().top;
