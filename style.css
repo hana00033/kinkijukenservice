@@ -878,7 +878,7 @@ small{
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:834px) {
 
 
     h1{
@@ -1199,11 +1199,13 @@ small{
 
     
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 834px) {
     .spmenucontainer,.burgerbtn,#sp-fixed-menu{
        display:none;
      }
-
+    .modal__wrapper{
+        display: none;
+    }
  }
 
 @media screen and (max-width:1100px) {

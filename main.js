@@ -43,18 +43,35 @@ var trigger = $('.modal__trigger'),
     close = $('.modal__close'),
     content = $('.modal__content');
 
+// $(trigger).click(function() {
+//   var x = $(window).width();
+//   //windowの分岐幅をyに代入
+//   var y = 834;
+//   if (x >= y) {
+//     console.log('remove');
+//     $(wrapper).css('display', 'none');
+//   };
+// })
+
+
+
 // 『モーダルを開くボタン』をクリックしたら、『モーダル本体』を表示
 $(trigger).click(function() {
-  $(wrapper).fadeIn(400);
+  var x = $(window).width();
+  //windowの分岐幅をyに代入
+  var y = 834;
+  if (x <= y) {
+    $(wrapper).fadeIn(400);
 
-  // クリックした画像のHTML要素を取得して、置き換える
-  $(content).html($(this).prop('outerHTML'));
+    // クリックした画像のHTML要素を取得して、置き換える
+    $(content).html($(this).prop('outerHTML'));
 
-  // スクロール位置を戻す
-  $(container).scrollTop(0);
+    // スクロール位置を戻す
+    $(container).scrollTop(0);
 
-  // サイトのスクロールを禁止にする
-  $('html, body').css('overflow', 'hidden');
+    // サイトのスクロールを禁止にする
+    $('html, body').css('overflow', 'hidden');
+  }
 });
 
 // 『背景』と『モーダルを閉じるボタン』をクリックしたら、『モーダル本体』を非表示
